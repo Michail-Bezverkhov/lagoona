@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Lagoona</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
-            <a href="#" class="logo">
-                <img src="img/logo.svg" alt="Logo" class="logo">
-            </a>
+            <div class="header-top flex">
+                <div class="header-left flex">
+                    <a href="#" class="header-logo">
+                        <img src="img/logo.svg" alt="Logo" class="logo">
+                    </a>
 
-            <address class="address header-address-tel">
-                <a href="tel:+74953225448" class="address-tel">7&nbsp;495 322-54-48</a>
-            </address>
+                    <address class="address header-address-tel">
+                        <a href="tel:+74953225448" class="address-tel">7&nbsp;495 322-54-48</a>
+                    </address>
+                </div>
 
-            <a href="#" class="login">Личный кабинет</a>
+                <div class="header-right">
+                    <a href="#" class="login">Личный кабинет</a>
+                </div>
+            </div>
 
-            <div class="header-nav-container">
-                <nav class="header-nav">
-                    <ul class="header-nav-list">
+            <div class="header-nav-container flex">
+                <nav class="header-nav nav-left">
+                    <ul class="list-reset flex header-nav-list">
                         <li class="header-list-item">
                             <a href="#about-us" class="header-link">
                                 О&nbsp;нас
@@ -55,13 +65,19 @@
                     </ul>
                 </nav>
 
-                <button class="btn header-list-button">
-                    Хочу тур
-                </button>
+                <ul class="list-reset flex btn-list">
+                    <li class="btn-list-item">
+                        <button class="btn header-list-button">
+                            Хочу тур
+                        </button>
+                    </li>
 
-                <button class="btn header-list-button">
-                    Обратный звонок
-                </button>
+                    <li class="btn-list-item">
+                        <button class="btn header-list-button">
+                            Обратный звонок
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -73,9 +89,10 @@
                     Спецпредложения
                 </h2>
 
-                <div class="container-offers">
-                    <ul class="offers-list">
-                        <li class="offers-list-item">
+                <div class="offers-block flex">
+
+                    <ul class="list-reset offers-left flex offers-list">
+                        <li class="flex offers-list-item">
                             <h3 class="offers-list-item-title">
                                 Мальдивские острова
                             </h3>
@@ -88,7 +105,8 @@
                                 Подробнее
                             </a>
                         </li>
-                        <li class="offers-list-item">
+
+                        <li class="flex offers-list-item">
                             <h3 class="offers-list-item-title">
                                 Горящий тур на&nbsp;остров Крит
                             </h3>
@@ -101,22 +119,23 @@
                                 Подробнее
                             </a>
                         </li>
-                        <li class="offers-list-item">
-                            <h3 class="offers-list-item-title">
-                                Номера категории люкс
-                            </h3>
-
-                            <p class="descr offers-list-item-descr">
-                                от&nbsp;5&nbsp;000&nbsp;₽
-                            </p>
-
-                            <a href="#" class="offers-list-item-link">
-                                Подробнее
-                            </a>
-                        </li>
                     </ul>
-                </div>
 
+
+                    <div class="offers-right flex offers-big-item">
+                        <h3 class="offers-list-item-title">
+                            Номера категории люкс
+                        </h3>
+
+                        <p class="descr offers-list-item-descr">
+                            от&nbsp;5&nbsp;000&nbsp;₽
+                        </p>
+
+                        <a href="#" class="offers-list-item-link">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -127,7 +146,7 @@
                 </h2>
 
                 <p class="descr about-us-descr">
-                    Идейные соображения высшего порядка, а&nbsp;также сложившаяся 
+                    Идейные соображения высшего порядка, а&nbsp;также сложившаяся
                     структура организации влечёт за&nbsp;собой процесс внедрения
                     и&nbsp;модернизации системы обучения кадров, соответствует
                     насущным потребностям. Идейные соображения высшего порядка,
@@ -147,41 +166,46 @@
                     Услуги
                 </h2>
 
-                <ul class="services-list">
-                    <li class="services-list-item">
+                <ul class="list-reset flex services-list">
+                    <li class="flex services-list-item">
                         <h3 class="services-list-item-title">
-                            Эксклюзивное обслуживание
+                            <a class="link-service" href="#">Эксклюзивное обслуживание</a>
                         </h3>
 
                         <p class="descr services-list-item-descr">
                             Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
                         </p>
                     </li>
-                    <li class="services-list-item">
+
+                    <li class="flex services-list-item">
                         <h3 class="services-list-item-title">
-                            Аренда банкетных залов
+                            <a class="link-service" href="#">Аренда банкетных залов</a>
                         </h3>
 
                         <p class="descr services-list-item-descr">
                             Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
                         </p>
                     </li>
-                    <li class="services-list-item">
+
+                    <li class="flex services-list-item">
                         <h3 class="services-list-item-title">
-                            Сауны, бассейны, бани, фитнес-залы
+                            <a class="link-service" href="#">Сауны, бассейны, бани, фитнес-залы</a>
                         </h3>
 
                         <p class="descr services-list-item-descr">
-                            Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
+                            Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию
+                            позиции
                         </p>
                     </li>
-                    <li class="services-list-item">
+
+                    <li class="flex services-list-item">
                         <h3 class="services-list-item-title">
-                            Охраняемые автомобильные стоянки
+                            <a class="link-service" href="#">Охраняемые автомобильные стоянки</a>
                         </h3>
 
                         <p class="descr services-list-item-descr">
-                            Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
+                            Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию
+                            позиции
                         </p>
                     </li>
                 </ul>
@@ -194,50 +218,50 @@
                     Преимущества
                 </h2>
 
-                <ul class="advantages-list">
-                    <li class="advantages-list-item">
+                <ul class="list-reset flex advantages-list">
+                    <li class="flex advantages-list-item">
                         <p class="descr advantages-list-item-descr">
                             Идейные соображения высшего порядка,
                             а&nbsp;также постоянный количественный рост
                         </p>
                     </li>
-                    <li class="advantages-list-item">
+                    <li class="flex advantages-list-item">
                         <p class="descr advantages-list-item-descr">
                             Значимость этих проблем настолько очевидна,
                             что вопрос остаётся открытым
                         </p>
                     </li>
-                    <li class="advantages-list-item">
+                    <li class="flex advantages-list-item">
                         <p class="descr advantages-list-item-descr">
                             Таким образом реализация плановых
                             заданий играет важную роль для понимания
                         </p>
                     </li>
-                    <li class="advantages-list-item">
+                    <li class="flex advantages-list-item">
                         <p class="descr advantages-list-item-descr">
                             Повседневная практика показывает,
                             что сложившаяся структура организации
                         </p>
                     </li>
-                    <li class="advantages-list-item">
+                    <li class="flex advantages-list-item">
                         <p class="descr advantages-list-item-descr">
                             Равным образом рамки и&nbsp;место обучения
                             кадров способствует подготовки сотрудника
                         </p>
                     </li>
-                    <li class="advantages-list-item">
+                    <li class="flex advantages-list-item">
                         <p class="descr advantages-list-item-descr">
                             Консультация с&nbsp;активом влечёт за&nbsp;собой
                             процесс внедрения услуг нашего сервиса
                         </p>
                     </li>
-                    <li class="advantages-list-item">
+                    <li class="flex advantages-list-item">
                         <p class="descr advantages-list-item-descr">
                             Повседневная практика показывает, что дальнейшее
                             развитие различных
                         </p>
                     </li>
-                    <li class="advantages-list-item">
+                    <li class="flex advantages-list-item">
                         <p class="descr advantages-list-item-descr">
                             Значимость этого настолько очевидна,
                             что консультация наших экспертов помогает
@@ -253,339 +277,341 @@
                     Размещение
                 </h2>
 
-                <ul class="location-list">
-                    <li class="location-list-item">
+                <ul class="list-reset flex location-list">
+                    <li class="flex location-list-item">
                         <img src="img/1.jpg" alt="Фотография отеля" class="location-list-item-pic">
 
-                        <div class=" location-list-item-price">
-                            <p class="location-list-item-price-descr">
-                                <span class="location-list-item-price-descr-from">
-                                    от
-                                </span>
-
-                                <span class="location-list-item-price-descr-num">
-                                    4&nbsp;698&nbsp;₽
-                                </span>
-
-                                <span class="location-list-item-price-descr-night">
-                                    /ночь
-                                </span>
-
-                                <div class="stars location-list-item-price-descr-stars">
+                        <div class="flex item-text">
+                            <div class="descr flex prices-stars">
+                                <p class="descr price">
+                                    <span class="span-from">
+                                        от
+                                    </span>
+    
+                                        4&nbsp;698&nbsp;₽
+        
+                                    <span class="span-night">
+                                        /ночь
+                                    </span>
+                                </p>
+    
+                                <div class="stars">
                                     <img src="img/star.svg" alt="Рейтинг отеля 4 из 5">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/empty-star.svg" alt="">
-                                </div> 
+                                </div>
+                            </div>
+
+                            <h3 class="location-list-item-name">
+                                Lagoona espa&ntilde;ola
+                            </h3>
+
+                            <p class="descr location-list-item-descr">
+                                Барселона, Испания
                             </p>
+                            
+                            <button class="btn location-list-item-btn">
+                                Номера
+                            </button>
                         </div>
-
-                        <h3 class="location-list-item-name">
-                            Lagoona espa&ntilde;ola
-                        </h3>
-
-                        <p class="descr location-list-item-descr">
-                            Барселона, Испания
-                        </p>
-
-                        <button class="btn location-list-item-btn">
-                            Номера
-                        </button>
                     </li>
 
-                    <li class="location-list-item">
+                    <li class="flex location-list-item">
                         <img src="img/2.jpg" alt="Фотография отеля" class="location-list-item-pic">
 
-                        <div class="location-list-item-price">
-                            <p class="location-list-item-price-descr">
-                                <span class="location-list-item-price-descr-from">
-                                    от
-                                </span>
-
-                                <span class="location-list-item-price-descr-num">
+                        <div class="flex item-text">
+                            <div class="descr flex prices-stars">
+                                <p class="descr price">
+                                    <span class="span-from">
+                                        от
+                                    </span>
+    
                                     5&nbsp;148&nbsp;₽
-                                </span>
-
-                                <span class="location-list-item-price-descr-night">
-                                    /ночь
-                                </span>
-
-                                <div class="stars location-list-item-price-descr-stars">
+        
+                                    <span class="span-night">
+                                        /ночь
+                                    </span>
+                                </p>
+    
+                                <div class="stars">
                                     <img src="img/star.svg" alt="Рейтинг отеля 4 из 5">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/empty-star.svg" alt="">
-                                </div> 
+                                </div>
+                            </div>
+
+                            <h3 class="location-list-item-name">
+                                Lagoona son t&iacute;picas
+                            </h3>
+
+                            <p class="descr location-list-item-descr">
+                                Барселона, Испания
                             </p>
+                            
+                            <button class="btn location-list-item-btn">
+                                Номера
+                            </button>
                         </div>
-
-                        <h3 class="location-list-item-name">
-                            Lagoona son t&iacute;picas
-                        </h3>
-
-                        <p class="descr location-list-item-descr">
-                            Барселона, Испания
-                        </p>
-
-                        <button class="btn location-list-item-btn">
-                            Номера
-                        </button>
                     </li>
 
-                    <li class="location-list-item">
+                    <li class="flex location-list-item">
                         <img src="img/3.jpg" alt="Фотография отеля" class="location-list-item-pic">
 
-                        <div class="location-list-item-price">
-                            <p class="location-list-item-price-descr">
-                                <span class="location-list-item-price-descr-from">
-                                    от
-                                </span>
-
-                                <span class="location-list-item-price-descr-num">
+                        <div class="flex item-text">
+                            <div class="descr flex prices-stars">
+                                <p class="descr price">
+                                    <span class="span-from">
+                                        от
+                                    </span>
+    
                                     6&nbsp;254&nbsp;₽
-                                </span>
-
-                                <span class="location-list-item-price-descr-night">
-                                    /ночь
-                                </span>
-
-                                <div class="stars location-list-item-price-descr-stars">
+        
+                                    <span class="span-night">
+                                        /ночь
+                                    </span>
+                                </p>
+    
+                                <div class="stars">
                                     <img src="img/star.svg" alt="Рейтинг отеля 5 из 5">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
-                                </div> 
+                                </div>
+                            </div>
+
+                            <h3 class="location-list-item-name">
+                                Lagoona de&nbsp;la&nbsp;guerra
+                            </h3>
+
+                            <p class="descr location-list-item-descr">
+                                Барселона, Испания
                             </p>
+                            
+                            <button class="btn location-list-item-btn">
+                                Номера
+                            </button>
                         </div>
-
-                        <h3 class="location-list-item-name">
-                            Lagoona de&nbsp;la&nbsp;guerra
-                        </h3>
-
-                        <p class="descr location-list-item-descr">
-                            Барселона, Испания
-                        </p>
-
-                        <button class="btn location-list-item-btn">
-                            Номера
-                        </button>
                     </li>
 
-                    <li class="location-list-item">
+                    <li class="flex location-list-item">
                         <img src="img/4.jpg" alt="Фотография отеля" class="location-list-item-pic">
 
-                        <div class="location-list-item-price">
-                            <p class="location-list-item-price-descr">
-                                <span class="location-list-item-price-descr-from">
-                                    от
-                                </span>
-
-                                <span class="location-list-item-price-descr-num">
+                        <div class="flex item-text">
+                            <div class="descr flex prices-stars">
+                                <p class="descr price">
+                                    <span class="span-from">
+                                        от
+                                    </span>
+    
                                     6&nbsp;320&nbsp;₽
-                                </span>
-
-                                <span class="location-list-item-price-descr-night">
-                                    /ночь
-                                </span>
-
-                                <div class="stars location-list-item-price-descr-stars">
+        
+                                    <span class="span-night">
+                                        /ночь
+                                    </span>
+                                </p>
+    
+                                <div class="stars">
                                     <img src="img/star.svg" alt="Рейтинг отеля 5 из 5">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
-                                </div> 
+                                </div>
+                            </div>
+
+                            <h3 class="location-list-item-name">
+                                Lagoona mentira piadosa
+                            </h3>
+
+                            <p class="descr location-list-item-descr">
+                                Барселона, Испания
                             </p>
+                            
+                            <button class="btn location-list-item-btn">
+                                Номера
+                            </button>
                         </div>
-
-                        <h3 class="location-list-item-name">
-                            Lagoona mentira piadosa
-                        </h3>
-
-                        <p class="descr location-list-item-descr">
-                            Барселона, Испания
-                        </p>
-
-                        <button class="btn location-list-item-btn">
-                            Номера
-                        </button>
                     </li>
 
-                    <li class="location-list-item">
+                    <li class="flex location-list-item">
                         <img src="img/5.jpg" alt="Фотография отеля" class="location-list-item-pic">
 
-                        <div class="location-list-item-price">
-                            <p class="location-list-item-price-descr">
-                                <span class="location-list-item-price-descr-from">
-                                    от
-                                </span>
-
-                                <span class="location-list-item-price-descr-num">
+                        <div class="flex item-text">
+                            <div class="descr flex prices-stars">
+                                <p class="descr price">
+                                    <span class="span-from">
+                                        от
+                                    </span>
+    
                                     6&nbsp;457&nbsp;₽
-                                </span>
-
-                                <span class="location-list-item-price-descr-night">
-                                    /ночь
-                                </span>
-
-                                <div class="stars location-list-item-price-descr-stars">
+        
+                                    <span class="span-night">
+                                        /ночь
+                                    </span>
+                                </p>
+    
+                                <div class="stars">
                                     <img src="img/star.svg" alt="Рейтинг отеля 4 из 5">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/empty-star.svg" alt="">
-                                </div> 
+                                </div>
+                            </div>
+
+                            <h3 class="location-list-item-name">
+                                Lagoona empujar la&nbsp;creatividad
+                            </h3>
+
+                            <p class="descr location-list-item-descr">
+                                Барселона, Испания
                             </p>
+                            
+                            <button class="btn location-list-item-btn">
+                                Номера
+                            </button>
                         </div>
-
-                        <h3 class="location-list-item-name">
-                            Lagoona empujar la&nbsp;creatividad
-                        </h3>
-
-                        <p class="descr location-list-item-descr">
-                            Барселона, Испания
-                        </p>
-
-                        <button class="btn location-list-item-btn">
-                            Номера
-                        </button>
                     </li>
 
-                    <li class="location-list-item">
+                    <li class="flex location-list-item">
                         <img src="img/6.jpg" alt="Фотография отеля" class="location-list-item-pic">
 
-                        <div class="location-list-item-price">
-                            <p class="location-list-item-price-descr">
-                                <span class="location-list-item-price-descr-from">
-                                    от
-                                </span>
-
-                                <span class="location-list-item-price-descr-num">
+                        <div class="flex item-text">
+                            <div class="descr flex prices-stars">
+                                <p class="descr price">
+                                    <span class="span-from">
+                                        от
+                                    </span>
+    
                                     6&nbsp;320&nbsp;₽
-                                </span>
-
-                                <span class="location-list-item-price-descr-night">
-                                    /ночь
-                                </span>
-
-                                <div class="stars location-list-item-price-descr-stars">
+        
+                                    <span class="span-night">
+                                        /ночь
+                                    </span>
+                                </p>
+    
+                                <div class="stars">
                                     <img src="img/star.svg" alt="Рейтинг отеля 4 из 5">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/empty-star.svg" alt="">
-                                </div> 
+                                </div>
+                            </div>
+
+                            <h3 class="location-list-item-name">
+                                Lagoona el&nbsp;retorno
+                            </h3>
+
+                            <p class="descr location-list-item-descr">
+                                Барселона, Испания
                             </p>
+                            
+                            <button class="btn location-list-item-btn">
+                                Номера
+                            </button>
                         </div>
-
-                        <h3 class="location-list-item-name">
-                            Lagoona el&nbsp;retorno
-                        </h3>
-
-                        <p class="descr location-list-item-descr">
-                            Барселона, Испания
-                        </p>
-
-                        <button class="btn location-list-item-btn">
-                            Номера
-                        </button>
                     </li>
 
-                    <li class="location-list-item">
+                    <li class="flex location-list-item">
                         <img src="img/7.jpg" alt="Фотография отеля" class="location-list-item-pic">
 
-                        <div class="location-list-item-price">
-                            <p class="location-list-item-price-descr">
-                                <span class="location-list-item-price-descr-from">
-                                    от
-                                </span>
-
-                                <span class="location-list-item-price-descr-num">
-                                    6&nbsp;505&nbsp;₽                                </span>
-
-                                <span class="location-list-item-price-descr-night">
-                                    /ночь
-                                </span>
-
-                                <div class="stars location-list-item-price-descr-stars">
+                        <div class="flex item-text">
+                            <div class="descr flex prices-stars">
+                                <p class="descr price">
+                                    <span class="span-from">
+                                        от
+                                    </span>
+    
+                                    6&nbsp;505&nbsp;₽
+        
+                                    <span class="span-night">
+                                        /ночь
+                                    </span>
+                                </p>
+    
+                                <div class="stars">
                                     <img src="img/star.svg" alt="Рейтинг отеля 5 из 5">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
-                                </div> 
+                                </div>
+                            </div>
+
+                            <h3 class="location-list-item-name">
+                                Lagoona mentira piadosa
+                            </h3>
+
+                            <p class="descr location-list-item-descr">
+                                Барселона, Испания
                             </p>
+                            
+                            <button class="btn location-list-item-btn">
+                                Номера
+                            </button>
                         </div>
-
-                        <h3 class="location-list-item-name">
-                            Lagoona mentira piadosa
-                        </h3>
-
-                        <p class="descr location-list-item-descr">
-                            Барселона, Испания
-                        </p>
-
-                        <button class="btn location-list-item-btn">
-                            Номера
-                        </button>
                     </li>
 
-                    <li class="location-list-item">
+                    <li class="flex location-list-item">
                         <img src="img/8.jpg" alt="Фотография отеля" class="location-list-item-pic">
 
-                        <div class="location-list-item-price">
-                            <p class="location-list-item-price-descr">
-                                <span class="location-list-item-price-descr-from">
-                                    от
-                                </span>
-
-                                <span class="location-list-item-price-descr-num">
+                        <div class="flex item-text">
+                            <div class="descr flex prices-stars">
+                                <p class="descr price">
+                                    <span class="span-from">
+                                        от
+                                    </span>
+    
                                     6&nbsp;824&nbsp;₽
-                                </span>
-
-                                <span class="location-list-item-price-descr-night">
-                                    /ночь
-                                </span>
-
-                                <div class="stars location-list-item-price-descr-stars">
+        
+                                    <span class="span-night">
+                                        /ночь
+                                    </span>
+                                </p>
+    
+                                <div class="stars">
                                     <img src="img/star.svg" alt="Рейтинг отеля 4 из 5">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/star.svg" alt="">
                                     <img src="img/empty-star.svg" alt="">
-                                </div> 
+                                </div>
+                            </div>
+
+                            <h3 class="location-list-item-name">
+                                Lagoona suerte sigui&oacute; siempre
+                            </h3>
+
+                            <p class="descr location-list-item-descr">
+                                Барселона, Испания
                             </p>
+                            
+                            <button class="btn location-list-item-btn">
+                                Номера
+                            </button>
                         </div>
-
-                        <h3 class="location-list-item-name">
-                            Lagoona suerte sigui&oacute; siempre
-                        </h3>
-
-                        <p class="descr location-list-item-descr">
-                            Барселона, Испания
-                        </p>
-
-                        <button class="btn location-list-item-btn">
-                            Номера
-                        </button>
                     </li>
 
-                    <li class="location-list-item location-list-last-item">
-                      <a href="#" class="link location-list-last-item-link">
-                        Посмотреть все варианты
-                      </a>
+                    <li class="flex location-list-item location-list-last-item">
+                        <a href="#" class="link location-list-last-item-link">
+                            Посмотреть все варианты
+                        </a>
                     </li>
 
                 </ul>
             </div>
         </section>
 
-        
-    </main>    
+
+    </main>
 
     <footer class="footer"></footer>
 </body>
+
 </html>
